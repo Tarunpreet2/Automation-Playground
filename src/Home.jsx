@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import ComponentButton from "./ComponentButton";
+import DragDropIframe from "./pages/DragDropIframe";
 
 const components = [
   { name: "MODAL", path: "modal" },
@@ -16,6 +17,8 @@ const components = [
   { name: "FILE UPLOAD", path: "fileupload" },
   { name: "NESTED SHADOW DOM", path: "nestedshadowdom" },
   { name: "IFRAME SHADOW", path: "iframeshadow" },
+  { name: "DRAG DROP IFRAME", path: "dragdropiframe" },
+  { name: "DRAG DROP SHADOW DOM", path: "dragdropshadowdom" },
   // Add more components as needed
 ];
 
