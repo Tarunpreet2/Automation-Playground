@@ -1,4 +1,6 @@
+
 import React, { useRef, useEffect } from "react";
+import BackButton from "../components/BackButton";
 
 const DragDropShadowDom = () => {
   const hostRef = useRef(null);
@@ -35,9 +37,13 @@ const DragDropShadowDom = () => {
   }, []);
 
   return (
-    <div style={{ padding: 32 }}>
+    <div style={{ padding: 32, textAlign: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <BackButton />
+      </div>
+      <br />
       <h2>Drag and Drop in Shadow DOM</h2>
-      <div ref={hostRef} />
+      <div ref={hostRef} style={{ display: "inline-block" }} />
     </div>
   );
 };
